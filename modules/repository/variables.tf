@@ -60,7 +60,7 @@ variable "archived" {
 }
 
 locals {
-  default_topics = ["test-kitchen","infrastructre", "testing" "${replace(replace(var.name, "_", "-"), ".", "")}", "terraform-managed"]
+  default_topics = ["test-kitchen","infrastructre", "testing", "${replace(replace(var.name, "_", "-"), ".", "")}", "terraform-managed"]
   topics         = concat(local.default_topics, var.additional_topics)
 }
 

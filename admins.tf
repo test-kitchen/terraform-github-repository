@@ -4,13 +4,13 @@ resource "github_team" "admins" {
   privacy     = "closed"
 }
 
-resource "github_membership" "cheeseplus" {
-  username = "cheeseplus"
+resource "github_membership" "xorima" {
+  username = "Xorima"
   role     = "admin"
 }
 
-resource "github_team_membership" "admins" {
+resource "github_team_membership" "admins-xorima" {
   team_id  = github_team.admins.id
-  username = "cheeseplus"
+  username = "Xorima"
   role     = "maintainer"
 }
