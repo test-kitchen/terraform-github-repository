@@ -10,12 +10,12 @@ terraform {
   }
   required_version = ">= 1.0.0"
 
-  # backend "remote" {
-  #   organization = "teest-kitchen"
-  #   workspaces {
-  #     name = "terraform-github-repository"
-  #   }
-  # }
+  backend "remote" {
+    organization = "test-kitchen"
+    workspaces {
+      name = "terraform-github-repository"
+    }
+  }
 }
 
 provider "github" {
