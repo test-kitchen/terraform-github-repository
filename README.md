@@ -12,7 +12,7 @@ Add a new entry to `terraform.tfvars.json`
 
 ```json
 {
-  "name": "azurerm",
+  "name": "kitchen-azurerm",
   "repo_type": "ruby_gem"
 },
 ```
