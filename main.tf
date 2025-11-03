@@ -11,7 +11,7 @@ module "repository" {
     concat(local.default_gem_topics, each.value.additional_topics != null ? each.value.additional_topics : [""])
   )
   additional_status_checks = each.value.additional_status_checks != null ? each.value.additional_status_checks : []
-  has_projects             = each.value.projects_enabled
+  has_projects             = each.value.has_projects
 }
 
 variable "repository" {
