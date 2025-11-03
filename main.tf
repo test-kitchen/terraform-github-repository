@@ -11,7 +11,7 @@ module "repository" {
     concat(local.default_gem_topics, each.value.additional_topics != null ? each.value.additional_topics : [""])
   )
   additional_status_checks = each.value.additional_status_checks != null ? each.value.additional_status_checks : []
-  projects_enabled         = each.value.projects_enabled
+  has_projects             = each.value.projects_enabled
 }
 
 variable "repository" {
@@ -22,7 +22,7 @@ variable "repository" {
     homepage_url_override    = optional(string)
     additional_topics        = optional(list(string)),
     additional_status_checks = optional(list(string))
-    projects_enabled         = optional(bool)
+    has_projects             = optional(bool)
   }))
   description = "The repositories to create."
 }
