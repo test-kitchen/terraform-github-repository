@@ -1,5 +1,5 @@
 module "repository" {
-  version = "0.0.4"
+  version = "0.1.0"
   source  = "damacus/github-repository/module"
 
   for_each              = { for repo in var.repository : repo.name => repo }
