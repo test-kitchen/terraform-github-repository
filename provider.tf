@@ -7,7 +7,7 @@ terraform {
   }
   required_version = ">= 1.0.0"
 
-  backend "remote" {
+  cloud {
     organization = "test-kitchen"
     workspaces {
       name = "terraform-github-repository"

@@ -2,4 +2,4 @@
 *.backup
 .terraform
 *.sh
-terraform.tfstate
+terraform.tfstate*
