@@ -1,6 +1,5 @@
 # Compiled files
-terraform.tfvars
 *.backup
 .terraform
 *.sh
-terraform.tfstate
+terraform.tfstate*
