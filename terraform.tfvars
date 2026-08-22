@@ -48,7 +48,7 @@ repository = [
     name                 = "kitchen-dokken",
     repo_type            = "ruby_gem",
     description_override = "Test Kitchen driver/provisioner for lightning faster Chef Infra cookbook testing with Docker",
-    additional_topics    = ["containers", "docker", "infrastucture"]
+    additional_topics    = ["containers", "docker", "infrastructure"]
   },
   {
     name                 = "busser-minitest",
@@ -154,7 +154,7 @@ repository = [
   {
     name                 = "kitchen-cinc",
     repo_type            = "ruby_gem",
-    description_override = "A Test Kitchen provisioner for omnibus Cinc Clinet"
+    description_override = "A Test Kitchen provisioner for omnibus Cinc Client"
   },
   {
     name                 = "kitchen-cinc-auditor",
